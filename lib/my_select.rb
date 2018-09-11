@@ -1,3 +1,7 @@
 def my_select(collection)
- # your code here!
+  ret = []
+  collection.each do |item|
+    ret.push(item) if yield item
+  end
+  ret
 end
