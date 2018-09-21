@@ -1,5 +1,3 @@
-require 'pry'
-
 def my_select(collection)
   true_array = []
   i = 0
