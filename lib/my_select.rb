@@ -5,6 +5,7 @@ def my_select(collection)
     yield(collection[i])
       for x in collection[i] == true
         ar.push(collection)
+      end
     i += 1
   end
   ar
