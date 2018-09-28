@@ -5,5 +5,5 @@ def my_select(collection)
     ar.push(yield(collection[i]))
     i += 1
   end
-  ar
+  ar.compact
 end
