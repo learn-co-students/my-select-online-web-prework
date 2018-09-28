@@ -2,8 +2,9 @@ def my_select(collection)
   i=0
   ar=[]
   while i < collection.length
-    ar.push(yield(collection[i]))
+    if (yield(collection[i]))
+      ar.push(collection[i])
     i += 1
   end
-  ar.compact
+  ar
 end
