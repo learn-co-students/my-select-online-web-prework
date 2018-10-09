@@ -4,6 +4,7 @@ newarrray =[]
 while x < collection.length
   if yield(collection[x]) == true
     newarray.push(collection[x])
+  end
   x += 1
 end
 newarray
