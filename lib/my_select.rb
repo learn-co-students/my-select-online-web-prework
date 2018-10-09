@@ -1,4 +1,4 @@
 def my_select(collection)
 collection.select do |x|
-   yield(collection[i])
+   yield(collection[x])
 end 
