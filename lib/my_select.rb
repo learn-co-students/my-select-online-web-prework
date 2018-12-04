@@ -1,3 +1,11 @@
+require "pry"
+
 def my_select(collection)
- # your code here!
+ array = []
+ collection.each do |el| 
+   if yield el 
+    array << el  
+   end
+ end 
+ return array
 end
