@@ -9,7 +9,7 @@ else
    while i <collection.length
 if yield(collection[i])
 
-     collect <<yield(collection[i])
+     collect <<(collection[i])
    end
      i+=1
 
