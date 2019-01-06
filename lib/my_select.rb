@@ -13,5 +13,5 @@ new_array
 end
 
 my_select(collection) do |num|
-  num.even?
+   num.even?
 end
