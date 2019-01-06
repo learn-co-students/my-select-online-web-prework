@@ -14,7 +14,4 @@ end
 
 my_select(collection) do |num|
   num.even?
-  if true
-    return num
-  end
 end
