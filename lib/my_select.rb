@@ -5,10 +5,7 @@ def my_select(collection)
   new_array = []
 
   while counter < collection.length
-    yield(collection[counter])
-      if true
-        return new_array << (collection[counter])
-      end
+    new_array << yield(collection[counter])
 
     counter = counter + 1
   end
@@ -17,5 +14,7 @@ end
 
 my_select(collection) do |num|
   num.even?
-
+  if true
+    return num
+  end
 end
