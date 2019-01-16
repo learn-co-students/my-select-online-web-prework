@@ -1,30 +1,26 @@
 require 'pry'
 
-
+=begin
 def my_select(collection)
 
   collection.select { |num| num.even? }
 
 end
+=end
 
 
-=begin
 nums = [1, 2, 3, 4, 5]
 
 def my_select(collection)
-  if block_given?
-    i = 0
-    selects = []
-      while i < collection.length
-        selects << yield(collection[i])
-        i += 1
-      end
-    selects
-  else
-    puts "No block given."
+  i = 0
+  select = []
+  while i < collection.length
+    if yield(collection[i])
+      select << collection[i]
+    end
+    i += 1
   end
+  select
 end
 
 my_select(nums) { |i| i.even? }
-
-=end
