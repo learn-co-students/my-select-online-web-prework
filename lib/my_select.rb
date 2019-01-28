@@ -2,15 +2,13 @@ def my_select(collection)
   counter = 0 
   new_array = []
   while counter < collection.length
-  #if collection.even? == true
-  #new_array << yield(collection.even)
-    yield (if collection[i].even? == true
-    new_array << yield(collection.even)
-    #collection.each do {|i| puts #{i}}
+    counter += 1 
+    if collection.even? == true
+      new_array << yield(collection.even) 
     end
   end
-     new_array
-end
+  new_array
+end 
 
 #how do i select something that is true/based on boolean parameters?
 #if blank is true then puts blank.true
