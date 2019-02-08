@@ -1,3 +1,14 @@
-def my_select(collection)
- # your code here!
+num = [1, 2, 3, 4, 5]
+def my_select(array)
+  i = 0
+  new_array = []
+  while i < array.size
+    if yield(array[i]) == true
+      new_array << array[i]
+    else
+  end
+    i += 1
+  end
+  new_array 
 end
+
