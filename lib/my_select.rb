@@ -1,4 +1,4 @@
-nums = [1, 2, 3, 4, 5]
+nums = []
 
 def my_select(nums)
   if block_given?
@@ -6,7 +6,9 @@ def my_select(nums)
     new_array = Array.new
     
     while i < nums.length
-      new_array << yield(nums[i])
+      if yield(nums[i]) == true
+        new_array << nums[i]
+      end
       i += 1
     end
     
@@ -20,4 +22,3 @@ end
 my_select(nums) do |num|
   num.even?
 end
-  
