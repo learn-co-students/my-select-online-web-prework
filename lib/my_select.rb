@@ -1,12 +1,13 @@
-def my_select(collection)
- new_collection=[]
- i=0 
-  while i<collection.length 
-   if yield (collection[i])==true
-    new_collection<<collection[i]
-    i=i+1
-  end 
-   end
-  new_collection
-
+def my_select(array)
+  i = 0
+  new_array = []
+  while i < array.size
+    if yield(array[i]) == true
+      new_array << array[i]
+    else
+      #nothing
+    end
+    i += 1
+  end
+  new_array
 end
