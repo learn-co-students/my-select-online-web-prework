@@ -5,7 +5,7 @@ def my_select(collection)
   new=[]
   while i < collection.length 
   
-    if yield(collection[i])==true
+    if yield (collection[i])
       new << (collection[i])
     end
     
