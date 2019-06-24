@@ -1,4 +1,4 @@
-collection = [1, 2, 3, 4, 5]
+
 
 def my_select(array)
   i = 0
@@ -12,4 +12,4 @@ def my_select(array)
   select
 end
 
-my_select(collection) { | num | num.even? }
+my_select(array) { | num | num.even? }
