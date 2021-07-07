@@ -1,3 +1,5 @@
 def my_select(collection)
- # your code here!
+ 
+ collection.select {|collection| collection%2==0}
+ 
 end
