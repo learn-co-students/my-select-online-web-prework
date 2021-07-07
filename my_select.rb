@@ -4,11 +4,13 @@ def my_select(collection)
  i = 0
  new_array = []
  while i < collection.length
-   selected_array = yield collection[i]
-   if selected_array == true
-     new_array << collection[i]
-   end
+   yield collection[i]
+   binding.pry
    i += 1
  end
  new_array
+end
+
+my_select([1,2,3,4]) do |num|
+  num.even?
 end
