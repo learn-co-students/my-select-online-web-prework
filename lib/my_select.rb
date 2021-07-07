@@ -1,3 +1,5 @@
-def my_select(collection)
- # your code here!
+def my_select(nums)
+nums.select do |nums|
+  nums.even?
+end
 end
