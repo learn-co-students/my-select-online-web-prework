@@ -1,3 +1,14 @@
+require 'pry'
+
 def my_select(collection)
- # your code here!
+  true_array = []
+  i = 0
+  while i < collection.length
+    a = yield (collection[i])
+    if a
+      true_array.push (collection[i])
+    end
+    i += 1
+  end
+  true_array
 end
